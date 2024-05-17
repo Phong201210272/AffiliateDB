@@ -1,0 +1,32 @@
+.custom-switch {
+    display: none; /* Ẩn input để hiển thị switch của Switchery */
+}
+
+.switchery {
+    width: 40px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switchery small {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.2s;
+}
+
+.switchery.checked {
+    background-color: green;
+}
+
+.switchery.checked small {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
